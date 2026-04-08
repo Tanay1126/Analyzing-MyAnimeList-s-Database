@@ -1,0 +1,2745 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0226.1626                               -->
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0226.1626)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='anime_excel(2)' inline='true' name='federated.077ak5b06lr0js11xnw4y05r5uhv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='anime_excel(2)' name='excel-direct.1gpxm8q15k7ntk0zvjpkf0lhoy8j'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Qiran/Downloads/anime_excel(2).xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1gpxm8q15k7ntk0zvjpkf0lhoy8j' name='power_query (2)' table='[&apos;power_query (2)$&apos;]' type='table'>
+          <columns gridOrigin='A1:F23:no:A1:F23:0' header='yes' outcome='6'>
+            <column datatype='string' name='Value' ordinal='0' />
+            <column datatype='integer' name='Count' ordinal='1' />
+            <column datatype='real' name='Avg Score' ordinal='2' />
+            <column datatype='real' name='Avg Popularity' ordinal='3' />
+            <column datatype='integer' name='Sum Popularity' ordinal='4' />
+            <column datatype='real' name='Avg Bloat' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[power_query (2)]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F23:no:A1:F23:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Value</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Value]</local-name>
+            <parent-name>[power_query (2)]</parent-name>
+            <remote-alias>Value</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[power!query (2)_1D01A130EF82414DB0CA3AD2F13EBEDB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Count]</local-name>
+            <parent-name>[power_query (2)]</parent-name>
+            <remote-alias>Count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[power!query (2)_1D01A130EF82414DB0CA3AD2F13EBEDB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg Score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg Score]</local-name>
+            <parent-name>[power_query (2)]</parent-name>
+            <remote-alias>Avg Score</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[power!query (2)_1D01A130EF82414DB0CA3AD2F13EBEDB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg Popularity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg Popularity]</local-name>
+            <parent-name>[power_query (2)]</parent-name>
+            <remote-alias>Avg Popularity</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[power!query (2)_1D01A130EF82414DB0CA3AD2F13EBEDB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum Popularity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum Popularity]</local-name>
+            <parent-name>[power_query (2)]</parent-name>
+            <remote-alias>Sum Popularity</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[power!query (2)_1D01A130EF82414DB0CA3AD2F13EBEDB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg Bloat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg Bloat]</local-name>
+            <parent-name>[power_query (2)]</parent-name>
+            <remote-alias>Avg Bloat</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[power!query (2)_1D01A130EF82414DB0CA3AD2F13EBEDB]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='power_query (2)' datatype='table' name='[__tableau_internal_object_id__].[power!query (2)_1D01A130EF82414DB0CA3AD2F13EBEDB]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Qiran/AppData/Local/Temp/TableauTemp/#TableauTemp_1donptz01yo91b1e0cfhr0i3eqo7.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/08/2026 03:25:39 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Value</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Value</remote-alias>
+              <ordinal>0</ordinal>
+              <family>power_query (2)</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Count</remote-alias>
+              <ordinal>1</ordinal>
+              <family>power_query (2)</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Avg Score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Avg Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Avg Score</remote-alias>
+              <ordinal>2</ordinal>
+              <family>power_query (2)</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Avg Popularity</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Avg Popularity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Avg Popularity</remote-alias>
+              <ordinal>3</ordinal>
+              <family>power_query (2)</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sum Popularity</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Sum Popularity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sum Popularity</remote-alias>
+              <ordinal>4</ordinal>
+              <family>power_query (2)</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Avg Bloat</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Avg Bloat]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Avg Bloat</remote-alias>
+              <ordinal>5</ordinal>
+              <family>power_query (2)</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='power_query (2)' id='power!query (2)_1D01A130EF82414DB0CA3AD2F13EBEDB'>
+            <properties context=''>
+              <relation connection='excel-direct.1gpxm8q15k7ntk0zvjpkf0lhoy8j' name='power_query (2)' table='[&apos;power_query (2)$&apos;]' type='table'>
+                <columns gridOrigin='A1:F23:no:A1:F23:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Value' ordinal='0' />
+                  <column datatype='integer' name='Count' ordinal='1' />
+                  <column datatype='real' name='Avg Score' ordinal='2' />
+                  <column datatype='real' name='Avg Popularity' ordinal='3' />
+                  <column datatype='integer' name='Sum Popularity' ordinal='4' />
+                  <column datatype='real' name='Avg Bloat' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='manga (anime_excel(2))' inline='true' name='federated.1aaa5te1eib4ao12m388u0qihxm1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='anime_excel(2)' name='excel-direct.1fi18pa034dva216w5tf40ia56qa'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Qiran/Downloads/anime_excel(2).xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1fi18pa034dva216w5tf40ia56qa' name='manga' table='[manga$]' type='table'>
+          <columns gridOrigin='A1:AJ10001:no:A1:AJ10001:0' header='yes' outcome='2'>
+            <column datatype='integer' name='manga_id' ordinal='0' />
+            <column datatype='string' name='title' ordinal='1' />
+            <column datatype='string' name='type' ordinal='2' />
+            <column datatype='real' name='score' ordinal='3' />
+            <column datatype='integer' name='scored_by' ordinal='4' />
+            <column datatype='string' name='status' ordinal='5' />
+            <column datatype='integer' name='volumes' ordinal='6' />
+            <column datatype='integer' name='chapters' ordinal='7' />
+            <column datatype='date' name='start_date' ordinal='8' />
+            <column datatype='date' name='end_date' ordinal='9' />
+            <column datatype='integer' name='members' ordinal='10' />
+            <column datatype='integer' name='favorites' ordinal='11' />
+            <column datatype='boolean' name='sfw' ordinal='12' />
+            <column datatype='boolean' name='approved' ordinal='13' />
+            <column datatype='datetime' name='created_at_before' ordinal='14' />
+            <column datatype='datetime' name='updated_at' ordinal='15' />
+            <column datatype='string' name='real_start_date' ordinal='16' />
+            <column datatype='string' name='real_end_date' ordinal='17' />
+            <column datatype='string' name='genres' ordinal='18' />
+            <column datatype='string' name='themes' ordinal='19' />
+            <column datatype='string' name='demographics' ordinal='20' />
+            <column datatype='string' name='authors' ordinal='21' />
+            <column datatype='string' name='serializations' ordinal='22' />
+            <column datatype='string' name='synopsis' ordinal='23' />
+            <column datatype='string' name='background' ordinal='24' />
+            <column datatype='string' name='main_picture' ordinal='25' />
+            <column datatype='string' name='url' ordinal='26' />
+            <column datatype='string' name='title_english' ordinal='27' />
+            <column datatype='string' name='title_japanese' ordinal='28' />
+            <column datatype='string' name='title_synonyms' ordinal='29' />
+            <column datatype='string' name='Basic Data Analysis' ordinal='30' />
+            <column datatype='real' name='Values' ordinal='31' />
+            <column datatype='real' name='F33' ordinal='32' />
+            <column datatype='real' name='F34' ordinal='33' />
+            <column datatype='string' name='Number_of_DaysPublished' ordinal='34' />
+            <column datatype='string' name='Status' ordinal='35' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[manga]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AJ10001:no:A1:AJ10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>manga_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[manga_id]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>manga_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[score]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>score</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>scored_by</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[scored_by]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>scored_by</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[status]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>status</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>volumes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[volumes]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>volumes</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>chapters</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[chapters]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>chapters</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[start_date]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>start_date</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[end_date]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>end_date</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>members</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[members]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>members</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>favorites</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[favorites]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>favorites</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sfw</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[sfw]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>sfw</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WINBOOL&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>approved</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[approved]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>approved</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WINBOOL&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_at_before</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[created_at_before]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>created_at_before</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>updated_at</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[updated_at]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>updated_at</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>real_start_date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[real_start_date]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>real_start_date</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>real_end_date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[real_end_date]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>real_end_date</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genres</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[genres]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>genres</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>themes</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[themes]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>themes</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>demographics</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[demographics]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>demographics</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>authors</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[authors]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>authors</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>serializations</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[serializations]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>serializations</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>synopsis</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[synopsis]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>synopsis</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>background</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[background]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>background</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>main_picture</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[main_picture]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>main_picture</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>url</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[url]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>url</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title_english</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[title_english]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>title_english</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title_japanese</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[title_japanese]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>title_japanese</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title_synonyms</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[title_synonyms]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>title_synonyms</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Basic Data Analysis</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Basic Data Analysis]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>Basic Data Analysis</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Values</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Values]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>Values</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F33</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F33]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>F33</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F34</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F34]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>F34</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number_of_DaysPublished</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Number_of_DaysPublished]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>Number_of_DaysPublished</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Status]</local-name>
+            <parent-name>[manga]</parent-name>
+            <remote-alias>Status</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Number of DaysPublished' datatype='string' name='[Number_of_DaysPublished]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+      <column caption='manga' datatype='table' name='[__tableau_internal_object_id__].[manga_87ABB8527468443B87381319A978A418]' role='measure' type='quantitative' />
+      <column caption='Approved' datatype='boolean' name='[approved]' role='dimension' type='nominal' />
+      <column caption='Authors' datatype='string' name='[authors]' role='dimension' type='nominal' />
+      <column caption='Background' datatype='string' name='[background]' role='dimension' type='nominal' />
+      <column caption='Chapters' datatype='integer' name='[chapters]' role='measure' type='quantitative' />
+      <column caption='Created At Before' datatype='datetime' name='[created_at_before]' role='dimension' type='ordinal' />
+      <column caption='Demographics' datatype='string' name='[demographics]' role='dimension' type='nominal' />
+      <column caption='End Date' datatype='date' name='[end_date]' role='dimension' type='ordinal' />
+      <column caption='Favorites' datatype='integer' name='[favorites]' role='measure' type='quantitative' />
+      <column caption='Genres' datatype='string' name='[genres]' role='dimension' type='nominal' />
+      <column caption='Main Picture' datatype='string' name='[main_picture]' role='dimension' type='nominal' />
+      <column caption='Manga Id' datatype='integer' name='[manga_id]' role='dimension' type='ordinal' />
+      <column caption='Members' datatype='integer' name='[members]' role='measure' type='quantitative' />
+      <column caption='Real End Date' datatype='string' name='[real_end_date]' role='dimension' type='nominal' />
+      <column caption='Real Start Date' datatype='string' name='[real_start_date]' role='dimension' type='nominal' />
+      <column caption='Score' datatype='real' name='[score]' role='measure' type='quantitative' />
+      <column caption='Scored By' datatype='integer' name='[scored_by]' role='measure' type='quantitative' />
+      <column caption='Serializations' datatype='string' name='[serializations]' role='dimension' type='nominal' />
+      <column caption='Sfw' datatype='boolean' name='[sfw]' role='dimension' type='nominal' />
+      <column caption='Start Date' datatype='date' name='[start_date]' role='dimension' type='ordinal' />
+      <column caption='Status1' datatype='string' name='[status]' role='dimension' type='nominal' />
+      <column caption='Synopsis' datatype='string' name='[synopsis]' role='dimension' type='nominal' />
+      <column caption='Themes' datatype='string' name='[themes]' role='dimension' type='nominal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Title English' datatype='string' name='[title_english]' role='dimension' type='nominal' />
+      <column caption='Title Japanese' datatype='string' name='[title_japanese]' role='dimension' type='nominal' />
+      <column caption='Title Synonyms' datatype='string' name='[title_synonyms]' role='dimension' type='nominal' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column caption='Updated At' datatype='datetime' name='[updated_at]' role='dimension' type='ordinal' />
+      <column caption='Url' datatype='string' name='[url]' role='dimension' type='nominal' />
+      <column caption='Volumes' datatype='integer' name='[volumes]' role='measure' type='quantitative' />
+      <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Qiran/AppData/Local/Temp/TableauTemp/#TableauTemp_0t9zchw1doi02z1g10mp9186euhe.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/08/2026 06:06:53 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <cols>
+            <map key='[Basic Data Analysis]' value='[Extract].[Basic Data Analysis]' />
+            <map key='[F33]' value='[Extract].[F33]' />
+            <map key='[F34]' value='[Extract].[F34]' />
+            <map key='[Number_of_DaysPublished]' value='[Extract].[Number_of_DaysPublished]' />
+            <map key='[Status]' value='[Extract].[Status]' />
+            <map key='[Values]' value='[Extract].[Values]' />
+            <map key='[approved]' value='[Extract].[approved]' />
+            <map key='[authors]' value='[Extract].[authors]' />
+            <map key='[background]' value='[Extract].[background]' />
+            <map key='[chapters]' value='[Extract].[chapters]' />
+            <map key='[created_at_before]' value='[Extract].[created_at_before]' />
+            <map key='[demographics]' value='[Extract].[demographics]' />
+            <map key='[end_date]' value='[Extract].[end_date]' />
+            <map key='[favorites]' value='[Extract].[favorites]' />
+            <map key='[genres]' value='[Extract].[genres]' />
+            <map key='[main_picture]' value='[Extract].[main_picture]' />
+            <map key='[manga_id]' value='[Extract].[manga_id]' />
+            <map key='[members]' value='[Extract].[members]' />
+            <map key='[real_end_date]' value='[Extract].[real_end_date]' />
+            <map key='[real_start_date]' value='[Extract].[real_start_date]' />
+            <map key='[score]' value='[Extract].[score]' />
+            <map key='[scored_by]' value='[Extract].[scored_by]' />
+            <map key='[serializations]' value='[Extract].[serializations]' />
+            <map key='[sfw]' value='[Extract].[sfw]' />
+            <map key='[start_date]' value='[Extract].[start_date]' />
+            <map key='[status]' value='[Extract].[status1]' />
+            <map key='[synopsis]' value='[Extract].[synopsis]' />
+            <map key='[themes]' value='[Extract].[themes]' />
+            <map key='[title]' value='[Extract].[title]' />
+            <map key='[title_english]' value='[Extract].[title_english]' />
+            <map key='[title_japanese]' value='[Extract].[title_japanese]' />
+            <map key='[title_synonyms]' value='[Extract].[title_synonyms]' />
+            <map key='[type]' value='[Extract].[type]' />
+            <map key='[updated_at]' value='[Extract].[updated_at]' />
+            <map key='[url]' value='[Extract].[url]' />
+            <map key='[volumes]' value='[Extract].[volumes]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>manga_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[manga_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>manga_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>manga</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>64833</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title</remote-alias>
+              <ordinal>1</ordinal>
+              <family>manga</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>64833</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>type</remote-alias>
+              <ordinal>2</ordinal>
+              <family>manga</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>score</remote-alias>
+              <ordinal>3</ordinal>
+              <family>manga</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>636</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>scored_by</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[scored_by]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>scored_by</remote-alias>
+              <ordinal>4</ordinal>
+              <family>manga</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2992</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>status1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>status1</remote-alias>
+              <ordinal>5</ordinal>
+              <family>manga</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>volumes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[volumes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>volumes</remote-alias>
+              <ordinal>6</ordinal>
+              <family>manga</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>68</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>chapters</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[chapters]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>chapters</remote-alias>
+              <ordinal>7</ordinal>
+              <family>manga</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>352</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[start_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start_date</remote-alias>
+              <ordinal>8</ordinal>
+              <family>manga</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>10711</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>end_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[end_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>end_date</remote-alias>
+              <ordinal>9</ordinal>
+              <family>manga</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>10149</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>members</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[members]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>members</remote-alias>
+              <ordinal>10</ordinal>
+              <family>manga</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4326</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>favorites</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[favorites]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>favorites</remote-alias>
+              <ordinal>11</ordinal>
+              <family>manga</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>499</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sfw</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[sfw]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sfw</remote-alias>
+              <ordinal>12</ordinal>
+              <family>manga</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>approved</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[approved]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>approved</remote-alias>
+              <ordinal>13</ordinal>
+              <family>manga</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>created_at_before</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[created_at_before]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>created_at_before</remote-alias>
+              <ordinal>14</ordinal>
+              <family>manga</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>6140</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>updated_at</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[updated_at]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>updated_at</remote-alias>
+              <ordinal>15</ordinal>
+              <family>manga</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>60465</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>real_start_date</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[real_start_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>real_start_date</remote-alias>
+              <ordinal>16</ordinal>
+              <family>manga</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10783</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>real_end_date</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[real_end_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>real_end_date</remote-alias>
+              <ordinal>17</ordinal>
+              <family>manga</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10131</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>genres</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[genres]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>genres</remote-alias>
+              <ordinal>18</ordinal>
+              <family>manga</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1114</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>themes</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[themes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>themes</remote-alias>
+              <ordinal>19</ordinal>
+              <family>manga</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>471</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>demographics</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[demographics]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>demographics</remote-alias>
+              <ordinal>20</ordinal>
+              <family>manga</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>authors</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[authors]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>authors</remote-alias>
+              <ordinal>21</ordinal>
+              <family>manga</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18603</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>serializations</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[serializations]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>serializations</remote-alias>
+              <ordinal>22</ordinal>
+              <family>manga</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1576</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>synopsis</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[synopsis]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>synopsis</remote-alias>
+              <ordinal>23</ordinal>
+              <family>manga</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>49920</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>background</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[background]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>background</remote-alias>
+              <ordinal>24</ordinal>
+              <family>manga</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20201</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>main_picture</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[main_picture]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>main_picture</remote-alias>
+              <ordinal>25</ordinal>
+              <family>manga</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>64833</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>url</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[url]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>url</remote-alias>
+              <ordinal>26</ordinal>
+              <family>manga</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>64833</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title_english</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title_english]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title_english</remote-alias>
+              <ordinal>27</ordinal>
+              <family>manga</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>29184</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title_japanese</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title_japanese]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title_japanese</remote-alias>
+              <ordinal>28</ordinal>
+              <family>manga</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>60882</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title_synonyms</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title_synonyms]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title_synonyms</remote-alias>
+              <ordinal>29</ordinal>
+              <family>manga</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>41904</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Basic Data Analysis</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Basic Data Analysis]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Basic Data Analysis</remote-alias>
+              <ordinal>30</ordinal>
+              <family>manga</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Values</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Values]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Values</remote-alias>
+              <ordinal>31</ordinal>
+              <family>manga</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F33</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F33]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F33</remote-alias>
+              <ordinal>32</ordinal>
+              <family>manga</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F34</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F34]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F34</remote-alias>
+              <ordinal>33</ordinal>
+              <family>manga</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number_of_DaysPublished</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Number_of_DaysPublished]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number_of_DaysPublished</remote-alias>
+              <ordinal>34</ordinal>
+              <family>manga</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2278</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Status</remote-alias>
+              <ordinal>35</ordinal>
+              <family>manga</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+              <object-id>[manga_87ABB8527468443B87381319A978A418]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Status:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Hidden Gem&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Heavyweight&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;General Library&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Modern Hit&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Cult Classic&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='manga' id='manga_87ABB8527468443B87381319A978A418'>
+            <properties context=''>
+              <relation connection='excel-direct.1fi18pa034dva216w5tf40ia56qa' name='manga' table='[manga$]' type='table'>
+                <columns gridOrigin='A1:AJ10001:no:A1:AJ10001:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='manga_id' ordinal='0' />
+                  <column datatype='string' name='title' ordinal='1' />
+                  <column datatype='string' name='type' ordinal='2' />
+                  <column datatype='real' name='score' ordinal='3' />
+                  <column datatype='integer' name='scored_by' ordinal='4' />
+                  <column datatype='string' name='status' ordinal='5' />
+                  <column datatype='integer' name='volumes' ordinal='6' />
+                  <column datatype='integer' name='chapters' ordinal='7' />
+                  <column datatype='date' name='start_date' ordinal='8' />
+                  <column datatype='date' name='end_date' ordinal='9' />
+                  <column datatype='integer' name='members' ordinal='10' />
+                  <column datatype='integer' name='favorites' ordinal='11' />
+                  <column datatype='boolean' name='sfw' ordinal='12' />
+                  <column datatype='boolean' name='approved' ordinal='13' />
+                  <column datatype='datetime' name='created_at_before' ordinal='14' />
+                  <column datatype='datetime' name='updated_at' ordinal='15' />
+                  <column datatype='string' name='real_start_date' ordinal='16' />
+                  <column datatype='string' name='real_end_date' ordinal='17' />
+                  <column datatype='string' name='genres' ordinal='18' />
+                  <column datatype='string' name='themes' ordinal='19' />
+                  <column datatype='string' name='demographics' ordinal='20' />
+                  <column datatype='string' name='authors' ordinal='21' />
+                  <column datatype='string' name='serializations' ordinal='22' />
+                  <column datatype='string' name='synopsis' ordinal='23' />
+                  <column datatype='string' name='background' ordinal='24' />
+                  <column datatype='string' name='main_picture' ordinal='25' />
+                  <column datatype='string' name='url' ordinal='26' />
+                  <column datatype='string' name='title_english' ordinal='27' />
+                  <column datatype='string' name='title_japanese' ordinal='28' />
+                  <column datatype='string' name='title_synonyms' ordinal='29' />
+                  <column datatype='string' name='Basic Data Analysis' ordinal='30' />
+                  <column datatype='real' name='Values' ordinal='31' />
+                  <column datatype='real' name='F33' ordinal='32' />
+                  <column datatype='real' name='F34' ordinal='33' />
+                  <column datatype='string' name='Number_of_DaysPublished' ordinal='34' />
+                  <column datatype='string' name='Status' ordinal='35' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='power_query (5) (anime_excel(2))' inline='true' name='federated.19q9qpy14scpc915yn2ca13q7h2k' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='anime_excel(2)' name='excel-direct.1j5ebmo1lkqx0h1h4ibrw0edrqob'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Qiran/Downloads/anime_excel(2).xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1j5ebmo1lkqx0h1h4ibrw0edrqob' name='power_query (5)' table='[&apos;power_query (5)$&apos;]' type='table'>
+          <columns gridOrigin='A1:D18:no:A1:D18:0' header='yes' outcome='6'>
+            <column datatype='string' name='Value' ordinal='0' />
+            <column datatype='integer' name='Count' ordinal='1' />
+            <column datatype='real' name='Avg Score' ordinal='2' />
+            <column datatype='integer' name='Sum Popularity' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[power_query (5)]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>3</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D18:no:A1:D18:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Value</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Value]</local-name>
+            <parent-name>[power_query (5)]</parent-name>
+            <remote-alias>Value</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[power!query (5)_E65F15F49412483197DE8AABB5DA16EC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Count]</local-name>
+            <parent-name>[power_query (5)]</parent-name>
+            <remote-alias>Count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[power!query (5)_E65F15F49412483197DE8AABB5DA16EC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg Score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg Score]</local-name>
+            <parent-name>[power_query (5)]</parent-name>
+            <remote-alias>Avg Score</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[power!query (5)_E65F15F49412483197DE8AABB5DA16EC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum Popularity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum Popularity]</local-name>
+            <parent-name>[power_query (5)]</parent-name>
+            <remote-alias>Sum Popularity</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[power!query (5)_E65F15F49412483197DE8AABB5DA16EC]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Avg Score1' datatype='real' name='[Avg Score]' role='measure' type='quantitative' />
+      <column caption='Value1' datatype='string' name='[Value]' role='dimension' type='nominal' />
+      <column caption='power_query (5)' datatype='table' name='[__tableau_internal_object_id__].[power!query (5)_E65F15F49412483197DE8AABB5DA16EC]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Qiran/AppData/Local/Temp/TableauTemp/#TableauTemp_1fmotsm10ga2qq1ab8cyk1jljw08.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/08/2026 06:53:34 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Value</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Value</remote-alias>
+              <ordinal>0</ordinal>
+              <family>power_query (5)</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+              <object-id>[power!query (5)_E65F15F49412483197DE8AABB5DA16EC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Count</remote-alias>
+              <ordinal>1</ordinal>
+              <family>power_query (5)</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[power!query (5)_E65F15F49412483197DE8AABB5DA16EC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Avg Score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Avg Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Avg Score</remote-alias>
+              <ordinal>2</ordinal>
+              <family>power_query (5)</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[power!query (5)_E65F15F49412483197DE8AABB5DA16EC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sum Popularity</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Sum Popularity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sum Popularity</remote-alias>
+              <ordinal>3</ordinal>
+              <family>power_query (5)</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[power!query (5)_E65F15F49412483197DE8AABB5DA16EC]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='power_query (5)' id='power!query (5)_E65F15F49412483197DE8AABB5DA16EC'>
+            <properties context=''>
+              <relation connection='excel-direct.1j5ebmo1lkqx0h1h4ibrw0edrqob' name='power_query (5)' table='[&apos;power_query (5)$&apos;]' type='table'>
+                <columns gridOrigin='A1:D18:no:A1:D18:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Value' ordinal='0' />
+                  <column datatype='integer' name='Count' ordinal='1' />
+                  <column datatype='real' name='Avg Score' ordinal='2' />
+                  <column datatype='integer' name='Sum Popularity' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Genres Against Avg Bloat&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='anime_excel(2)' name='federated.077ak5b06lr0js11xnw4y05r5uhv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.077ak5b06lr0js11xnw4y05r5uhv'>
+            <column datatype='real' name='[Avg Bloat]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Value]' role='dimension' type='nominal' />
+            <column-instance column='[Avg Bloat]' derivation='Attribute' name='[attr:Avg Bloat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Value]' derivation='None' name='[none:Value:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.077ak5b06lr0js11xnw4y05r5uhv].[none:Value:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Action&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Adventure&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Avant Garde&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Award Winning&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Boys Love&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Comedy&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Drama&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Ecchi&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Erotica&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Fantasy&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Girls Love&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Gourmet&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Hentai&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Horror&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Mystery&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Romance&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Sci-Fi&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Slice of Life&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Sports&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Supernatural&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Suspense&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.077ak5b06lr0js11xnw4y05r5uhv].[none:Value:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>%all%</bucket>
+              <bucket>&quot;Hentai&quot;</bucket>
+              <bucket>&quot;Avant Garde&quot;</bucket>
+              <bucket>&quot;Slice of Life&quot;</bucket>
+              <bucket>&quot;Sports&quot;</bucket>
+              <bucket>&quot;Boys Love&quot;</bucket>
+              <bucket>&quot;Sci-Fi&quot;</bucket>
+              <bucket>&quot;Comedy&quot;</bucket>
+              <bucket>&quot;Girls Love&quot;</bucket>
+              <bucket>&quot;Adventure&quot;</bucket>
+              <bucket>&quot;Drama&quot;</bucket>
+              <bucket>&quot;Gourmet&quot;</bucket>
+              <bucket>&quot;Erotica&quot;</bucket>
+              <bucket>&quot;Fantasy&quot;</bucket>
+              <bucket>&quot;Action&quot;</bucket>
+              <bucket>&quot;Mystery&quot;</bucket>
+              <bucket>&quot;Horror&quot;</bucket>
+              <bucket>&quot;Supernatural&quot;</bucket>
+              <bucket>&quot;Romance&quot;</bucket>
+              <bucket>&quot;Ecchi&quot;</bucket>
+              <bucket>&quot;Award Winning&quot;</bucket>
+              <bucket>&quot;Suspense&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.077ak5b06lr0js11xnw4y05r5uhv].[none:Value:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.077ak5b06lr0js11xnw4y05r5uhv].[none:Value:nk]' value='-90' />
+            <format attr='font-size' field='[federated.077ak5b06lr0js11xnw4y05r5uhv].[none:Value:nk]' value='12' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.450276255607605' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.077ak5b06lr0js11xnw4y05r5uhv].[attr:Avg Bloat:qk]</rows>
+        <cols>[federated.077ak5b06lr0js11xnw4y05r5uhv].[none:Value:nk]</cols>
+      </table>
+      <simple-id uuid='{E7445A40-E6D0-42DA-9CDB-66912CD37C4E}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='anime_excel(2)' name='federated.077ak5b06lr0js11xnw4y05r5uhv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.077ak5b06lr0js11xnw4y05r5uhv'>
+            <column datatype='real' name='[Avg Score]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Value]' role='dimension' type='nominal' />
+            <column-instance column='[Value]' derivation='None' name='[none:Value:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Avg Score]' derivation='Sum' name='[sum:Avg Score:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.077ak5b06lr0js11xnw4y05r5uhv].[none:Value:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Action&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Adventure&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Avant Garde&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Award Winning&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Boys Love&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Comedy&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Drama&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Ecchi&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Erotica&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Fantasy&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Girls Love&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Gourmet&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Hentai&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Horror&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Mystery&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Romance&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Sci-Fi&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Slice of Life&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Sports&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Supernatural&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Suspense&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.077ak5b06lr0js11xnw4y05r5uhv].[none:Value:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.077ak5b06lr0js11xnw4y05r5uhv].[sum:Avg Score:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.077ak5b06lr0js11xnw4y05r5uhv].[none:Value:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.077ak5b06lr0js11xnw4y05r5uhv].[none:Value:nk]' value='-90' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.077ak5b06lr0js11xnw4y05r5uhv].[sum:Avg Score:qk]</rows>
+        <cols>[federated.077ak5b06lr0js11xnw4y05r5uhv].[none:Value:nk]</cols>
+      </table>
+      <simple-id uuid='{C250F1F9-8426-4E99-8DB9-3D75B64E95A9}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Count, Avg Score, and Avg Popularity of Genres given it is &quot;Award Winning&quot;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='power_query (5) (anime_excel(2))' name='federated.19q9qpy14scpc915yn2ca13q7h2k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19q9qpy14scpc915yn2ca13q7h2k'>
+            <column caption='Avg Score1' datatype='real' name='[Avg Score]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Count]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Sum Popularity]' role='measure' type='quantitative' />
+            <column caption='Value1' datatype='string' name='[Value]' role='dimension' type='nominal' />
+            <column-instance column='[Count]' derivation='Attribute' name='[attr:Count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Avg Score]' derivation='None' name='[none:Avg Score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sum Popularity]' derivation='None' name='[none:Sum Popularity:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Value]' derivation='None' name='[none:Value:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.19q9qpy14scpc915yn2ca13q7h2k].[none:Value:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Action&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Adventure&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Avant Garde&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Comedy&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Drama&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Ecchi&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Fantasy&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Girls Love&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Horror&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Mystery&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Romance&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Sci-Fi&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Slice of Life&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Sports&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Supernatural&quot;' />
+              <groupfilter function='member' level='[none:Value:nk]' member='&quot;Suspense&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.19q9qpy14scpc915yn2ca13q7h2k].[none:Value:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>%all%</bucket>
+              <bucket>&quot;Girls Love&quot;</bucket>
+              <bucket>&quot;Ecchi&quot;</bucket>
+              <bucket>&quot;Sports&quot;</bucket>
+              <bucket>&quot;Horror&quot;</bucket>
+              <bucket>&quot;Suspense&quot;</bucket>
+              <bucket>&quot;Avant Garde&quot;</bucket>
+              <bucket>&quot;Slice of Life&quot;</bucket>
+              <bucket>&quot;Mystery&quot;</bucket>
+              <bucket>&quot;Supernatural&quot;</bucket>
+              <bucket>&quot;Romance&quot;</bucket>
+              <bucket>&quot;Adventure&quot;</bucket>
+              <bucket>&quot;Action&quot;</bucket>
+              <bucket>&quot;Fantasy&quot;</bucket>
+              <bucket>&quot;Comedy&quot;</bucket>
+              <bucket>&quot;Sci-Fi&quot;</bucket>
+              <bucket>&quot;Drama&quot;</bucket>
+              <bucket>&quot;Award Winning&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.19q9qpy14scpc915yn2ca13q7h2k].[none:Value:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.19q9qpy14scpc915yn2ca13q7h2k].[none:Value:nk]' value='-90' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.19q9qpy14scpc915yn2ca13q7h2k].[none:Avg Score:qk]' palette='green_gold_10_0' type='interpolated' />
+            <encoding attr='size' field='[federated.19q9qpy14scpc915yn2ca13q7h2k].[none:Avg Score:qk]' field-type='quantitative' max-size='1' min-size='0.503127' type='rangesize' />
+            <encoding attr='size' field='[federated.19q9qpy14scpc915yn2ca13q7h2k].[none:Sum Popularity:qk]' field-type='quantitative' max-size='1' min-size='0.159084' type='rangesize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.19q9qpy14scpc915yn2ca13q7h2k].[none:Avg Score:qk]' />
+              <size column='[federated.19q9qpy14scpc915yn2ca13q7h2k].[none:Sum Popularity:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2.3935689926147461' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.19q9qpy14scpc915yn2ca13q7h2k].[attr:Count:qk]</rows>
+        <cols>[federated.19q9qpy14scpc915yn2ca13q7h2k].[none:Value:nk]</cols>
+      </table>
+      <simple-id uuid='{12B55F0B-52D5-43B1-A4FA-18F3DA989F5E}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='manga (anime_excel(2))' name='federated.1aaa5te1eib4ao12m388u0qihxm1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1aaa5te1eib4ao12m388u0qihxm1'>
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column-instance column='[Status]' derivation='Count' name='[cnt:Status:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='Count' name='[pcto:cnt:Status:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1aaa5te1eib4ao12m388u0qihxm1].[none:Status:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Status:nk]' member='&quot;Cult Classic&quot;' />
+              <groupfilter function='member' level='[none:Status:nk]' member='&quot;General Library&quot;' />
+              <groupfilter function='member' level='[none:Status:nk]' member='&quot;Heavyweight&quot;' />
+              <groupfilter function='member' level='[none:Status:nk]' member='&quot;Hidden Gem&quot;' />
+              <groupfilter function='member' level='[none:Status:nk]' member='&quot;Modern Hit&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1aaa5te1eib4ao12m388u0qihxm1].[none:Status:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.1aaa5te1eib4ao12m388u0qihxm1].[none:Status:nk]' />
+              <wedge-size column='[federated.1aaa5te1eib4ao12m388u0qihxm1].[cnt:Status:qk]' />
+              <text column='[federated.1aaa5te1eib4ao12m388u0qihxm1].[none:Status:nk]' />
+              <text column='[federated.1aaa5te1eib4ao12m388u0qihxm1].[pcto:cnt:Status:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1aaa5te1eib4ao12m388u0qihxm1].[cnt:Status:qk]</field>
+                  <field>[federated.1aaa5te1eib4ao12m388u0qihxm1].[none:Status:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>642</value>
+                <value>&quot;Hidden Gem&quot;</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-3' y='29' />
+          </mark-label>
+          <mark-label id='1' label-state='off'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1aaa5te1eib4ao12m388u0qihxm1].[cnt:Status:qk]</field>
+                  <field>[federated.1aaa5te1eib4ao12m388u0qihxm1].[none:Status:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>53</value>
+                <value>&quot;Cult Classic&quot;</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='53' y='29' />
+          </mark-label>
+          <mark-label id='2' label-state='off'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1aaa5te1eib4ao12m388u0qihxm1].[cnt:Status:qk]</field>
+                  <field>[federated.1aaa5te1eib4ao12m388u0qihxm1].[none:Status:nk]</field>
+                  <field>[federated.1aaa5te1eib4ao12m388u0qihxm1].[pcto:cnt:Status:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>6</value>
+                <value>&quot;Heavyweight&quot;</value>
+                <value>0.0085348506401137988</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-79' y='5' />
+          </mark-label>
+          <mark-label id='3' label-state='off'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1aaa5te1eib4ao12m388u0qihxm1].[cnt:Status:qk]</field>
+                  <field>[federated.1aaa5te1eib4ao12m388u0qihxm1].[none:Status:nk]</field>
+                  <field>[federated.1aaa5te1eib4ao12m388u0qihxm1].[pcto:cnt:Status:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2</value>
+                <value>&quot;Modern Hit&quot;</value>
+                <value>8.010894816951053e-05</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='47' y='25' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{0D099223-C690-445C-90E8-C55B7BC4281A}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='72'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='137'>
+            <card param='[federated.077ak5b06lr0js11xnw4y05r5uhv].[none:Value:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.077ak5b06lr0js11xnw4y05r5uhv].[none:Value:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{30DFE4A6-81D6-42F7-BE1D-918AAAA14962}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.077ak5b06lr0js11xnw4y05r5uhv].[none:Value:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{CE456FB4-5884-41FB-B331-90836A4FCA1F}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card param='[federated.19q9qpy14scpc915yn2ca13q7h2k].[none:Value:nk]' type='filter' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='200'>
+            <card pane-specification-id='0' param='[federated.19q9qpy14scpc915yn2ca13q7h2k].[none:Avg Score:qk]' type='color' />
+            <card pane-specification-id='0' param='[federated.19q9qpy14scpc915yn2ca13q7h2k].[none:Sum Popularity:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.19q9qpy14scpc915yn2ca13q7h2k].[none:Avg Score:qk]</field>
+            <field>[federated.19q9qpy14scpc915yn2ca13q7h2k].[none:Value:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{CD0A3F05-DE12-4E72-BC7A-39FBD1006E31}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1aaa5te1eib4ao12m388u0qihxm1].[none:Status:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1aaa5te1eib4ao12m388u0qihxm1].[none:Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1aaa5te1eib4ao12m388u0qihxm1].[none:Status:nk]</field>
+            <field>[federated.1aaa5te1eib4ao12m388u0qihxm1].[none:title:nk]</field>
+            <field>[federated.1aaa5te1eib4ao12m388u0qihxm1].[none:type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{07CB51AA-7253-409F-9BAF-FE939DD76E25}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 4' width='192'>
+      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
+      AAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
